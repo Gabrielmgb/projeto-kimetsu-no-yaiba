@@ -32,12 +32,12 @@ main .personagem .imagem {
 .conteudo {
     position: absolute;
     top: 0;
-    left: 120px;
+    left: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    max-width: 380px;
+    max-width: 400px;
     z-index: 1;
 }
 
@@ -52,7 +52,9 @@ main .personagem .imagem {
 .conteudo .descricao {
     color: #ffffff;
     font-family: "Rubik";
-    line-height: 24px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 10%;
 }
 
 .conteudo .logo {
@@ -66,22 +68,26 @@ main .personagem .imagem {
     position: fixed;
     top: 0;
     right: 0;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     width: 165px;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
     background-color: rgba(0,0,0, 0.2);
 }
 
 .botoes .botao{
-    border: none;
-    background: none;
+    border: 0.5px;
+    background: #1d1b1b;
     cursor: pointer;
     border-radius: 50%;
+}
+
+.botoes .botao:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .botoes .botao img {
@@ -89,6 +95,6 @@ main .personagem .imagem {
 }
 
 .botoes .botao.selecionado {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px #d9d9d9;
+    transform: scale(1.35);
+    box-shadow: 0 0 50px #d81c04;
 }
